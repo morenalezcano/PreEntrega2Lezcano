@@ -5,58 +5,119 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="shortcut icon" href="../assets/iconos/estrelllaRosa.png" type="image/x-icon">
      <title>Tour</title>
+
+     <!-- bootstrap menu-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
      <link rel="stylesheet" href="../css/styles.css">
   </head>
 
-    <body>
-      <header>
+   <body class="bodytour">
+      <header class="navbar navbar-expand-lg header">
          <div class="logo">
-            <img src="../assets/logo/logo.webp" alt="mp3"> 
+           <img src="../assets/logo/logo.webp" alt="mp3"> 
          </div> 
-         <nav> 
-            <ul>
-                <li class="nombre"> <a href="../indexhome.html">Emilia Mernes</a></li>
-                <li><a href="./musica.html">Musica</a> </li>
-                <li><a href="./Tour.html">Tour</a> </li>
-                <li><a href="./Noticias.html">Noticias</a> </li>
-                <li><a href="./Fotos.html">Fotos</a> </li>
-                <li><a href="./Opinion.html">Opinion/Contacto</a> </li>
-            </ul>
-         </nav> 
-      </header><br><br>  
+         <div class="container-fluid">
+           <a class="navbar-brand" href="../index.html">
+             <span class="nombre"> Emilia Mernes </span>
+           </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <nav class="collapse navbar-collapse" id="navbarNav">
+             <ul class="navbar-nav">
+               <li><a href="./musica.html">Musica</a> </li>
+               <li><a href="./Tour.html">Tour</a> </li>
+               <li><a href="./Noticias.html">Noticias</a> </li>
+               <li><a href="./Fotos.html">Fotos</a> </li>
+               <li><a href="./newsletter.html">Newsletter</a> </li>
+             </ul>
+           </nav>
+         </div>
+      </header>
 
-      <div>
-         <hr>
-              <p>10 de junio, 2024 </p>             
-              <p>LUGAR</p>  
-              <p>ZONA</p>
-              <P>INFO</P>
-              <P><a href="#">TICKETS</a></P>
-         <hr>
-              <p>15 de junio, 2024 </p>             
-              <p>LUGAR</p>  
-              <p>ZONA</p>
-              <P>INFO</P>
-              <P><a href="#">TICKETS</a></P>
-         <hr>
-              <p>20 de junio, 2024 </p>             
-              <p>LUGAR</p>  
-              <p>ZONA</p>
-              <P>INFO</P>
-              <P><a href="#">TICKETS</a></P>
-         <hr>
-              <p>25 de junio, 2024 </p>             
-              <p>LUGAR</p>  
-              <p>ZONA</p>
-              <P>INFO</P>
-              <P><a href="#">TICKETS</a></P>
-         <hr>
-              <p>30 de junio, 2024 </p>             
-              <p>LUGAR</p>  
-              <p>ZONA</p>
-              <P>INFO</P>
-              <P><a href="#">TICKETS</a></P>
-         <hr>
-      </div>
+      <main class="maintour">
+         <section class="containertour">
+            <div class="evento">
+               <hr>
+               <h2>17 de marzo del 2024</h2>            
+               <p>Argentina</p>  
+               <p>Buenos Aires</p>
+               <P>INFO</P>
+               <button>ENTRADAS</button>
+            </div>  
+            <div class="evento">    
+               <hr>
+               <h2>5 de abril del 2024</h2>            
+               <p>Argentina</p>  
+               <p>Cordoba</p>
+               <P>INFO</P>
+               <button>ENTRADAS</button>
+            </div>
+            <div class="evento">    
+               <hr>
+               <h2>12 de abril del 2024</h2>            
+               <p>Argentina</p>  
+               <p>Entre Rios</p>
+               <P>INFO</P>
+               <button>ENTRADAS</button>
+            </div>
+         </section>   
+      </main>  
+
+      <footer class="footer"> 
+
+         <section id="redes">  
+           <ul class="social-icon">
+             <li class="icon-elem">
+               <a href="" class="icon">
+                 <ion-icon name="logo-youtube"></ion-icon>
+               </a>
+             </li>
+         
+             <li class="icon-elem">
+               <a href="" class="icon">
+                 <ion-icon name="logo-instagram"></ion-icon>
+               </a>
+             </li>
+          
+             <li class="icon-elem">
+               <a href="" class="icon">
+                 <ion-icon name="logo-tiktok"></ion-icon>
+               </a>
+             </li>
+           
+             <li class="icon-elem">
+               <a href="" class="icon">
+                 <ion-icon name="logo-facebook"></ion-icon>
+               </a>
+             </li>
+           </ul>
+         </section>
+   
+         <nav>
+           <ul class="menu">
+   
+             <li><a href="./indexhome.html">Inicio</a></li>
+             <li><a href="./paginas/musica.html">Musica</a> </li>
+             <li><a href="./paginas/Tour.html">Tour</a> </li>
+             <li><a href="./paginas/Noticias.html">Noticias</a> </li>
+             <li><a href="./paginas/Fotos.html">Fotos</a> </li>
+             <li><a href="./paginas/newsletter.html">Newsletter</a> </li>
+   
+           </ul>
+         </nav>
+         <p class="text">@2024 | Todos los derechos reservados </p> 
+   
+         <br><br> 
+   
+      </footer>
+      
+      <!--script de los logos del footer-->
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   
+      <!--script de menu hamburguesa de bootstrao-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
    </body>
 </html>

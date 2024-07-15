@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/iconos/estrelllaRosa.png" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/logo/estrelllaRosa.png" type="image/x-icon">
+    
     <title>Emilia Mernes | Offi sit</title>
+
+    <!--bootstrap menu-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
 
   <body> 
-    <header>
+    <!--<header>
       <div class="logo">
         <img src="./assets/logo/logo.webp" alt="mp3"> 
       </div>  
@@ -25,26 +30,99 @@
          
         </ul>
       </nav> 
+    </header>-->
+
+    <header class="navbar navbar-expand-lg header">
+      <div class="logo">
+        <img src="../assets/logo/logo.webp" alt="mp3"> 
+      </div> 
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <span class="nombre"> Emilia Mernes </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li><a href="./paginas/musica.html">Musica</a> </li>
+            <li><a href="./paginas/Tour.html">Tour</a> </li>
+            <li><a href="./paginas/Noticias.html">Noticias</a> </li>
+            <li><a href="./paginas/Fotos.html">Fotos</a> </li>
+            <li><a href="./paginas/newsletter.html">Newsletter</a> </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
+
       <br><br><br>
-      <!--<div class="cd">
-        <img src="./assets/portada/y1b88ld7.png" alt="">
-      </div>-->
-        <section class="tarjeta">
-          <div class="portada" style="width: 700px; height: 800px;">
-            <h1 class="titulocarta">Album: .mp3</h1>
-            <p class="texto carta">informacion sobre el album</p>
-            <img class="portadaImagen" src="./assets/portada/PortadaAlbun.jpg" alt="Portada del albun .mp3 de Emilia Mernes"><br>
-            <button class="btn"><a href="https://youtu.be/slzuWeIgaoE?si=PrPMUmsUFScx-nc4">ESCUCHAR</a></button>
-          </div><br><br>
-        </section>
+      
+      <section class="tarjeta">
+        <div class="portada" style="width: 700px; height: 800px;">
+          <h1 class="titulocarta">Album: .mp3</h1>
+          <p class="texto carta">informacion sobre el album</p>
+          <img class="portadaImagen" src="./assets/portada/PortadaAlbun.jpg" alt="Portada del albun .mp3 de Emilia Mernes"><br>
+          <button class="btn"><a href="https://youtu.be/slzuWeIgaoE?si=PrPMUmsUFScx-nc4">ESCUCHAR</a></button>
+        </div><br><br><br><br>
+      </section>
       
       <br><br><br>
       
     </main>
     
-    <footer> <h3> Emilia Mernes - Todos los derechos reservados</h3></footer>
+    <footer class="footer"> 
+
+      <section id="redes">  
+        <ul class="social-icon">
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+      
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+       
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+        
+          <li class="icon-elem">
+            <a href="" class="icon">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <nav>
+        <ul class="menu">
+
+          <li><a href="./indexhome.html">Inicio</a></li>
+          <li><a href="./paginas/musica.html">Musica</a> </li>
+          <li><a href="./paginas/Tour.html">Tour</a> </li>
+          <li><a href="./paginas/Noticias.html">Noticias</a> </li>
+          <li><a href="./paginas/Fotos.html">Fotos</a> </li>
+          <li><a href="./paginas/newsletter.html">Newsletter</a> </li>
+
+        </ul>
+      </nav>
+      <p class="text">@2024 | Todos los derechos reservados </p> 
+
+      <br><br> 
+
+    </footer>
+    <!--script de iconos de footer-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!--script de menu hamburguesa de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

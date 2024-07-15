@@ -32,11 +32,10 @@ body{
         font-size: 30px;
         padding: 0px 0px 0px 0px;
      
-    }
+    }  
     .navbar {
-        flex-wrap: nowrap !important;
-    }
-     
+        flex-wrap: nowrap;
+    } 
 }
 
 @media (min-width:451px){
@@ -50,9 +49,11 @@ body{
         
         padding: 0px 190px 0px 0px;
     } 
-    body .portada{
-        padding: 30px;
+    
+    .navbar {
+        flex-wrap: nowrap;
     }
+
 }
 @media(min-width:1024px){
     li.nombre{ 
@@ -131,13 +132,8 @@ ul li {
     .navbar-nav .nav-item a {
         padding: 10px;
         display: block; /* Hace que los enlaces ocupen todo el ancho */
-    }
+    } 
 }
-
-/*.nombre.active a{
-    text-decoration: underline;
-}*/
-
 
 a {
     text-decoration: none;
@@ -177,50 +173,98 @@ body .portada{
     text-align: center; 
 }
 
-/*body .cd{
-    text-align: center; 
-}*/
-
 .cd img{
     width: 400px; 
 }
 
 body .btn{
-    background-color: aqua;
     margin: 10px ;
     padding: 20px;
     text-align: center;
     border-radius: 20px;
-    border-color: aqua;
-    border: none;
-    
+    border: none; 
 }
 
 main .btn a{
     text-align: center;
-    
 }
 
-/* Boton 
- background-image: linear-gradient(0deg, #ed4b84, #ea7aa4);
+.btn {
+ background-image: linear-gradient(0deg, #f80459, #ea7aa4);
     border: 7px solid #ed4b84;
     color: #fff;
-    display: block;
-    font-size: 2.1875rem;
     font-weight: 400;
-    margin: 1.875rem auto;
-    padding: .625rem;
     text-align: center;
     text-decoration: none;
-*/
+}
 main{
     background-color: rgb(252, 121, 182); 
 }
 
+/*FOOTER*/
 footer{
     background-color: aqua;
     text-align: center;
-    padding: 3px 40px 110px 30px ;  
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+
+.icon-elem{
+    list-style: none; 
+}
+
+.icon{
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+    flex-direction: row;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+   
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+
+}
+
+.menu-icon{
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: o.75;
+    transition: 0.3;
 }
 
 /*FOTOS*/
@@ -300,6 +344,12 @@ footer{
     align-items: center;
 }
 
+.foto11 img{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+}
+
 @media (min-width: 600px) {
  .wide{
      grid-column: span 2;
@@ -312,6 +362,34 @@ footer{
  .foto5{
      height: 100%;
    }
+
+}
+
+
+
+@media (min-width: 1024px){
+    .contenedorfotos{
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+    }
+}
+@media (min-width: 1200px){
+    .contenedorfotos{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+        grid-auto-rows: minmax(200px, auto);
+    }
+}
+@media (min-width: 1440px){
+    .contenedorfotos{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+    }
+}
+@media (min-width: 2560px){
+    .contenedorfotos{
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
+    }
 }
 
 /*NOTICIAS*/
@@ -334,10 +412,6 @@ footer{
         grid-template-columns: 1fr; 
     }
 }
-
-
-
-
 
 .noticia{
     background-color: rgba(253, 3, 120, 0.575);
@@ -368,12 +442,27 @@ footer{
 
 /*.noticia img,
 .tituloNoticia,
-.vermas{
-    margin-bottom: 10px;
+
+/*TOUR*/
+.bodytour{
+    background-color: aqua;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.maintour{
+    background-color: rgb(252, 121, 182)
+}
+
+.containertour{
+max-width: 800px;
+
 }
 
 /*MUSICA*/
-/*TOUR*/
-/*OPINION O CONTACTO*/
+
+/*NEWSLETTER*/
 /*div .ContenedorFotos{
 }
