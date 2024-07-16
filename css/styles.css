@@ -527,60 +527,60 @@ button{
 
 /*NEWSLETTER*/
 @media(min-width:768px){
-body {
-    background-color: aqua;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-}
+    body {
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
 
-.mainnews{
-    background-color: rgb(252, 121, 182);
-}
+    }
 
-.newsletter-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    text-align: center;
-}
+    .mainnews{
+        background-color: rgb(252, 121, 182);
+    }
 
-.newsletter-container h2 {
-    margin-bottom: 20px;
-}
+    .newsletter-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
 
-.newsletter-container label {
-    display: block;
-    margin: 10px 0 5px;
-    text-align: left;
-}
+    .newsletter-container h2 {
+        margin-bottom: 20px;
+    }
 
-.newsletter-container input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+    .newsletter-container label {
+        display: block;
+        margin: 10px 0 5px;
+        text-align: left;
+    }
 
-.newsletter-container button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 16px;
-}
+    .newsletter-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
 
-.newsletter-container button:hover {
-    background-color: #0056b3;
-}
+    .newsletter-container button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .newsletter-container button:hover {
+        background-color: #0056b3;
+    }
 }
 @media(max-width:767px){
     body {
