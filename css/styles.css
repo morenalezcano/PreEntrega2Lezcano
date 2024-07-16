@@ -444,25 +444,194 @@ footer{
 .tituloNoticia,
 
 /*TOUR*/
+@media (min-width:701px){
 .bodytour{
     background-color: aqua;
-    margin: 0;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
 }
 
 .maintour{
     background-color: rgb(252, 121, 182)
+
 }
 
 .containertour{
-max-width: 800px;
-
+    width: 100%;
+    padding: 20px;
 }
 
-/*MUSICA*/
+.evento{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    border-bottom: 1px solid ;
+}
+
+.evento h2{
+    margin: 0 0 10px 0;
+}
+
+.evento:last-child{
+    border-bottom: none;;
+}
+
+.fecha, .pais, .lugar{
+    flex: 1;
+    text-align: center;
+}
+
+button{
+    display: flex;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+}
+@media (max-width:700px){
+    .bodytour{
+        background-color: aqua;
+        align-items: center;
+        
+    }
+    button{
+        display: flex;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+    .fecha,.boton, button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containertour,.boton .evento, button{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
 
 /*NEWSLETTER*/
-/*div .ContenedorFotos{
+@media(min-width:768px){
+body {
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.mainnews{
+    background-color: rgb(252, 121, 182);
+}
+
+.newsletter-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.newsletter-container h2 {
+    margin-bottom: 20px;
+}
+
+.newsletter-container label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.newsletter-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.newsletter-container button:hover {
+    background-color: #0056b3;
+}
+}
+@media(max-width:767px){
+    body {
+        background-color: aqua;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    } 
+    .mainnews{
+        background-color: rgb(252, 121, 182);
+    }
+    
+    .newsletter-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+    }
+    .newsletter-container h2 {
+        margin-bottom: 20px;
+    }
+    
+    .newsletter-container label {
+        display: block;
+        margin: 10px 0 5px;
+        text-align: left;
+    }
+    
+    .newsletter-container input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    .newsletter-container button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .newsletter-container button:hover {
+        background-color: #0056b3;
+    }
 }
