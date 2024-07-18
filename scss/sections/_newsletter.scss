@@ -1,0 +1,106 @@
+@media(min-width:768px){
+    body {
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .mainnews{
+        background-color: rgb(252, 121, 182);
+    }
+
+    .newsletter-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+        h2 {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    .newsletter-container{
+        button:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+
+@media(max-width:767px){
+    body {
+        background-color: aqua;
+        align-items: center;
+        height: 100vh;
+        margin: 0; 
+    } 
+    .mainnews{
+        background-color: rgb(252, 121, 182);
+    }
+    
+    .newsletter-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+        text-align: center;
+        h2 {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+    
+    .newsletter-container{
+        button:hover {
+            background-color: #0056b3;
+        }
+    }
+}

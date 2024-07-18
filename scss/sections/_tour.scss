@@ -1,0 +1,76 @@
+@media (min-width:701px){
+    .bodytour{
+        background-color: $color-celeste;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    .maintour{
+        background-color: $color-rosa
+    }
+    
+    .containertour{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .evento{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        border-bottom: 1px solid ;
+        h2{
+            margin: 0 0 10px 0;
+        }
+    }
+    
+    .evento:last-child{
+        border-bottom: none;;
+    }
+    
+    .fecha, .pais, .lugar{
+        flex: 1;
+        text-align: center;
+    }
+    
+    button{
+        display: flex;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:700px){
+    .bodytour{
+        background-color: $color-celeste;
+        align-items: center;
+        
+    }
+    button{
+        display: flex;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+
+    .fecha,.boton, button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containertour,.boton .evento, button{
+        justify-content: center;
+        align-items: center;
+    }
+}
+    

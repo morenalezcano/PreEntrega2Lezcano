@@ -1,0 +1,10 @@
+@mixin titulos{
+    color: rgb(182, 3, 107);  
+    text-align: center; 
+    margin: 10px;
+}
+
+@mixin fotos{
+    width: 100%;
+    display: flex; 
+}

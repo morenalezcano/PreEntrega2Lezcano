@@ -1,0 +1,62 @@
+footer{
+    background-color: aqua;
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+   
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 5px;
+    
+}
+
+.icon-elem{
+    list-style: none; 
+}
+
+.icon{
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.5s;
+    flex-direction: row;
+}
+
+.icon:hover{
+    transform: translateY(-10px);
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: 0.3;
+}
+
+
