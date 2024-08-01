@@ -30,12 +30,13 @@
     img{
         @include fotos;
         align-items: center;
+        height: 100%; 
     }
 }
 .foto4{
     img{
         @include fotos;
-        align-items: center; 
+        align-items: center;
     }
 }
 .foto5{
@@ -58,6 +59,7 @@
     img{
         @include fotos; 
         align-items: center;
+        height: 100%;
     }
 }
 
@@ -68,12 +70,7 @@
     }    
 }
 
-.foto9 {
-    img{
-        @include fotos;
-        align-items: center;
-    }
-}
+
 
 .foto10 {
         img{

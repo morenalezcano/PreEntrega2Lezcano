@@ -1,83 +1,345 @@
 
-
-@media(min-width:768px){
-h1{
-    @include titulos
-}
-
-p{
-    @include titulos
-}
-
-.tarjeta{
-    margin: 80px;
-    text-align: center;
-    display: flex;
-    justify-content: center;  
-}
-
-body {
-    .portada{
-        text-align: center;  
-        background-color: $color-rosa-obscuro;
-        border-radius: 30px;
-       padding-left: 30px;
-       padding-right:30px ;
-        
+/*pc*/
+@media(max-width:1024px){
+    h1{
+        @include titulos
     }
-}
 
+    p{
+        @include titulos
+    }
+    .estrella1 ,.estrella5,.kiss2,.estrella4{
+        display: none;
+    }
+    .estrellaextra{
+        margin-top: 20px;
+        width: 80px;
+        margin-left: 300px;
+    }
+    .kiss{
+        width: 80px;
+        margin-left: 830px;
+        margin-bottom: 10px;
 
-.portada{
-    
-    .img{
-     text-align: center; 
+    }
+    .kiss1{
+        width: 80px;
+        margin-top:300px ;
+        margin-right: 15px;
+    }
+
+    .estrella2{
+        width: 80px;
+        margin-top: 50px;
+    }
+
+    /*estickers de brillo del lado izquierdo*/
+    .estrella3{
+        width: 70px;
+        margin-top: 100px;
+        margin-left: 15px;
+    }
+
+    .kiss3{
+        width: 80px;
+        margin-top: 450px;
+    }
+   
+
+    .estrella6{
+        width: 80px;
+        margin-left: 90px;
+    }
+
+    .tarjeta{
+        text-align: center;
+        display: flex;
+        justify-content: center;  
     }
     
-}
-
-.cd{
-    img{
+    .dibujoemilia{
+        margin-left: 50%;
         width: 400px;
-    } 
-}
+    }
+    body {
+        .portada{
+            text-align: center;  
+            background-color: $color-rosa-obscuro;
+            border-radius: 30px;
+            padding-left: 30px;
+            padding-right:30px ;
 
-body .btn{
-    margin: 10px ;
-    padding: 20px;
-    text-align: center;
-    border-radius: 20px;
-    border: none; 
-}
-
-.btn {
- background-image: linear-gradient(0deg, #f80459, #ea7aa4);
-    border: 7px solid #ed4b84;
-    color: #fff;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-}
-main{
-    background-color: $color-rosa; 
-    .btn{
-        a{
-         text-align: center;
         }
-    } 
+    }
+
+    .portada{
+       
+        .img{
+         text-align: center; 
+        }
+
+    }
+
+    .cd{
+        img{
+            width: 400px;
+        } 
+    }
+
+    body .btn{
+        margin: 10px ;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        border: none; 
+    }
+
+    .btn {
+     background-image: linear-gradient(0deg, #f80459, #ea7aa4);
+        border: 7px solid #ed4b84;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+    main{
+        background-color: $color-rosa; 
+        .btn{
+            a{
+             text-align: center;
+            }
+        } 
+    }
 }
 
+@media(min-width:1025px){
+    h1{
+        @include titulos
+    }
+
+    p{
+        @include titulos
+    }
+
+    /*estickers de brillo del lado derecho*/
+    .estrellaextra{
+        width: 80px;
+        margin-left: 300px;
+    }
+    .kiss{
+        margin-top: 20px;
+        width: 110px;
+        margin-left: 700px;
+
+    }
+
+    .estrella1{
+        width: 80px;
+        margin-top: 500px;
+       
+    }
+
+    .kiss1{
+        width: 110px;
+        margin-top:300px ;
+        margin-right: 15px;
+    }
+
+    .estrella2{
+        width: 110px;
+        margin-top: 50px;
+    }
+
+    .kiss2{
+        width: 70px;
+        margin-top: 600px;
+    }
+
+
+    /*estickers de brillo del lado izquierdo*/
+    .estrella3{
+        width: 70px;
+        margin-top: 100px;
+        margin-left: 15px;
+    }
+
+    .kiss3{
+        width: 80px;
+        margin-top: 450px;
+    }
+
+    .estrella4{
+        width: 100px;
+        margin-top: 250px;
+    }
+
+    .estrella5{
+        width: 70px;
+        margin-top: 700px;
+    }
+
+    .estrella6{
+        width: 130px;
+        margin-left: 150px;
+    }
+
+    .tarjeta{
+        text-align: center;
+        display: flex;
+        justify-content: center;  
+    }
+    
+    .dibujoemilia{
+        margin-left: 400px;
+        width: 550px;
+    }
+    body {
+        .portada{
+            text-align: center;  
+            background-color: $color-rosa-obscuro;
+            border-radius: 30px;
+            padding-left: 30px;
+            padding-right:30px ;
+
+        }
+    }
+
+    .portada{
+
+        .img{
+         text-align: center; 
+        }
+
+    }
+
+    .cd{
+        img{
+            width: 400px;
+        } 
+    }
+
+    body .btn{
+        margin: 10px ;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        border: none; 
+    }
+
+    .btn {
+     background-image: linear-gradient(0deg, #f80459, #ea7aa4);
+        border: 7px solid #ed4b84;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+    main{
+        background-color: $color-rosa; 
+        .btn{
+            a{
+             text-align: center;
+            }
+        } 
+    }
+
+}
+/*tablet*/
+@media(max-width:768px){
+    h1{
+        @include titulos
+    }
+
+    p{
+        @include titulos
+    }
+
+    .estrellaextra,.estrella1 ,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6, .kiss, .kiss1,.kiss2,.kiss3{
+        display: none;
+    }
+
+    .tarjeta{
+        text-align: center;
+        display: flex;
+        justify-content: center;  
+    }
+    
+    .dibujoemilia{
+        width: 480px;
+        margin-left: 100px;
+    }
+
+    body {
+        .portada{
+            text-align: center;  
+            background-color: $color-rosa-obscuro;
+            border-radius: 30px;
+            padding-left: 30px;
+            padding-right:30px ;
+
+        }
+    }
+
+
+    .portada{
+        margin-top: 30px;
+        .img{
+         text-align: center; 
+        }
+
+    }
+
+    .cd{
+        img{
+            width: 400px;
+        } 
+    }
+
+    body .btn{
+        margin: 10px ;
+        padding: 20px;
+        text-align: center;
+        border-radius: 20px;
+        border: none; 
+    }
+
+    .btn {
+     background-image: linear-gradient(0deg, #f80459, #ea7aa4);
+        border: 7px solid #ed4b84;
+        color: #fff;
+        font-weight: 400;
+        text-align: center;
+        text-decoration: none;
+    }
+    main{
+        background-color: $color-rosa; 
+        .btn{
+            a{
+             text-align: center;
+            }
+        } 
+    }
+
 }
 
 
+/*celular*/
 @media(max-width:767px){
     h1{
         @include titulos;
         font-size: 25px;
     }
+
+    .titulocarta{
+        width: 200px
+    }
     
     p{
         @include titulos;
+    }
+
+    .estrellaextra,.estrella1 ,.estrella2,.estrella3,.estrella4,.estrella5,.estrella6, .kiss, .kiss1,.kiss2,.kiss3{
+        display: none;
     }
     .portadaImagen{
         width: 300px;
@@ -101,12 +363,12 @@ main{
     }
     
     .portada{
+        margin-top: 30px;
         .img{
          text-align: center; 
         }
+        
     }
-    
-    
     
     body .btn{
         margin: 10px ;
@@ -124,6 +386,12 @@ main{
         text-align: center;
         text-decoration: none;
     }
+
+    .dibujoemilia{
+        width: 350px;
+        margin-left: 20px;
+        
+    }
     main{
         background-color: $color-rosa; 
         .btn{
@@ -133,9 +401,14 @@ main{
         } 
     }
     
+}
+
+@media(max-width:320px){
+    .portadaImagen{
+        width: 286px;
     }
-    @media(max-width:320px){
-        .portadaImagen{
-            width: 250px;
-        }
+    .dibujoemilia{
+        width: 300px;
+        margin-left: 20px;
     }
+}

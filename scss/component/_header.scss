@@ -1,7 +1,7 @@
 
 header{
     display: flex; 
-    background-color: aqua;
+    background-color: $color-celeste;
     align-items: center;
     padding: 10px;
 }
@@ -30,17 +30,7 @@ a {
     } 
 }
 
-@media(min-width:769px){/*grande*/
-    .nombre {
-        font-size: 50px;
-        padding: 0px;
-    }
-    header .logo img{
-        width: 125px;
-        display: flex;
-    }
-    
-}
+
 
 @media(min-width:451px){/*tablet*/
    
@@ -59,17 +49,16 @@ a {
     
     .logo{
         img{
-        padding: left 10px; ;
-        display: inline;
-        width: 50px;
+         display: inline;
+         width: 69px;
         }
     }
-    li.nombre{
-        font-size: 20px;
-        padding: 0px 0px 0px 0px;
-     
-    }  
-    
+    li{
+     .nombre{
+         font-size: 20px;
+         padding: 0px 0px 0px 0px;
+     }  
+    }
 }
 
 

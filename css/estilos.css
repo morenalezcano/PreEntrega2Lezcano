@@ -9,12 +9,12 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Shrikhand";
-  background-color: aqua;
-  color: blueviolet;
+  background-color: rgb(125, 225, 252);
+  color: rgb(73, 7, 134);
 }
 
 footer {
-  background-color: aqua;
+  background-color: rgb(125, 225, 252);
   text-align: center;
   width: 100%;
   min-height: 100px;
@@ -74,7 +74,7 @@ footer {
 
 header {
   display: flex;
-  background-color: aqua;
+  background-color: rgb(125, 225, 252);
   align-items: center;
   padding: 10px;
 }
@@ -96,16 +96,6 @@ a {
     padding: 0px 400px 0px 0px;
   }
 }
-@media (min-width: 769px) { /*grande*/
-  .nombre {
-    font-size: 50px;
-    padding: 0px;
-  }
-  header .logo img {
-    width: 125px;
-    display: flex;
-  }
-}
 @media (min-width: 451px) { /*tablet*/
   .nombre {
     font-size: 50px;
@@ -118,11 +108,10 @@ a {
 }
 @media (max-width: 450px) { /*celular*/
   .logo img {
-    padding: left 10px;
     display: inline;
-    width: 50px;
+    width: 69px;
   }
-  li.nombre {
+  li .nombre {
     font-size: 20px;
     padding: 0px 0px 0px 0px;
   }
@@ -140,7 +129,8 @@ a {
   display: block;
 }
 
-@media (min-width: 768px) {
+/*pc*/
+@media (max-width: 1024px) {
   h1 {
     color: rgb(182, 3, 107);
     text-align: center;
@@ -151,15 +141,54 @@ a {
     text-align: center;
     margin: 10px;
   }
+  .estrella1, .estrella5, .kiss2, .estrella4 {
+    display: none;
+  }
+  .estrellaextra {
+    margin-top: 20px;
+    width: 80px;
+    margin-left: 300px;
+  }
+  .kiss {
+    width: 80px;
+    margin-left: 830px;
+    margin-bottom: 10px;
+  }
+  .kiss1 {
+    width: 80px;
+    margin-top: 300px;
+    margin-right: 15px;
+  }
+  .estrella2 {
+    width: 80px;
+    margin-top: 50px;
+  }
+  /*estickers de brillo del lado izquierdo*/
+  .estrella3 {
+    width: 70px;
+    margin-top: 100px;
+    margin-left: 15px;
+  }
+  .kiss3 {
+    width: 80px;
+    margin-top: 450px;
+  }
+  .estrella6 {
+    width: 80px;
+    margin-left: 90px;
+  }
   .tarjeta {
-    margin: 80px;
     text-align: center;
     display: flex;
     justify-content: center;
   }
+  .dibujoemilia {
+    margin-left: 50%;
+    width: 400px;
+  }
   body .portada {
     text-align: center;
-    background-color: rgba(253, 3, 120, 0.575);
+    background-color: rgba(253, 3, 120, 0.692);
     border-radius: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -192,6 +221,173 @@ a {
     text-align: center;
   }
 }
+@media (min-width: 1025px) {
+  h1 {
+    color: rgb(182, 3, 107);
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    color: rgb(182, 3, 107);
+    text-align: center;
+    margin: 10px;
+  }
+  /*estickers de brillo del lado derecho*/
+  .estrellaextra {
+    width: 80px;
+    margin-left: 300px;
+  }
+  .kiss {
+    margin-top: 20px;
+    width: 110px;
+    margin-left: 700px;
+  }
+  .estrella1 {
+    width: 80px;
+    margin-top: 500px;
+  }
+  .kiss1 {
+    width: 110px;
+    margin-top: 300px;
+    margin-right: 15px;
+  }
+  .estrella2 {
+    width: 110px;
+    margin-top: 50px;
+  }
+  .kiss2 {
+    width: 70px;
+    margin-top: 600px;
+  }
+  /*estickers de brillo del lado izquierdo*/
+  .estrella3 {
+    width: 70px;
+    margin-top: 100px;
+    margin-left: 15px;
+  }
+  .kiss3 {
+    width: 80px;
+    margin-top: 450px;
+  }
+  .estrella4 {
+    width: 100px;
+    margin-top: 250px;
+  }
+  .estrella5 {
+    width: 70px;
+    margin-top: 700px;
+  }
+  .estrella6 {
+    width: 130px;
+    margin-left: 150px;
+  }
+  .tarjeta {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .dibujoemilia {
+    margin-left: 400px;
+    width: 550px;
+  }
+  body .portada {
+    text-align: center;
+    background-color: rgba(253, 3, 120, 0.692);
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .portada .img {
+    text-align: center;
+  }
+  .cd img {
+    width: 400px;
+  }
+  body .btn {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+  }
+  .btn {
+    background-image: linear-gradient(0deg, #f80459, #ea7aa4);
+    border: 7px solid #ed4b84;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  }
+  main {
+    background-color: rgb(252, 121, 182);
+  }
+  main .btn a {
+    text-align: center;
+  }
+}
+/*tablet*/
+@media (max-width: 768px) {
+  h1 {
+    color: rgb(182, 3, 107);
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    color: rgb(182, 3, 107);
+    text-align: center;
+    margin: 10px;
+  }
+  .estrellaextra, .estrella1, .estrella2, .estrella3, .estrella4, .estrella5, .estrella6, .kiss, .kiss1, .kiss2, .kiss3 {
+    display: none;
+  }
+  .tarjeta {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .dibujoemilia {
+    width: 480px;
+    margin-left: 100px;
+  }
+  body .portada {
+    text-align: center;
+    background-color: rgba(253, 3, 120, 0.692);
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .portada {
+    margin-top: 30px;
+  }
+  .portada .img {
+    text-align: center;
+  }
+  .cd img {
+    width: 400px;
+  }
+  body .btn {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+  }
+  .btn {
+    background-image: linear-gradient(0deg, #f80459, #ea7aa4);
+    border: 7px solid #ed4b84;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+  }
+  main {
+    background-color: rgb(252, 121, 182);
+  }
+  main .btn a {
+    text-align: center;
+  }
+}
+/*celular*/
 @media (max-width: 767px) {
   h1 {
     color: rgb(182, 3, 107);
@@ -199,10 +395,16 @@ a {
     margin: 10px;
     font-size: 25px;
   }
+  .titulocarta {
+    width: 200px;
+  }
   p {
     color: rgb(182, 3, 107);
     text-align: center;
     margin: 10px;
+  }
+  .estrellaextra, .estrella1, .estrella2, .estrella3, .estrella4, .estrella5, .estrella6, .kiss, .kiss1, .kiss2, .kiss3 {
+    display: none;
   }
   .portadaImagen {
     width: 300px;
@@ -214,10 +416,13 @@ a {
   }
   body .portada {
     text-align: center;
-    background-color: rgba(253, 3, 120, 0.575);
+    background-color: rgba(253, 3, 120, 0.692);
     border-radius: 30px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .portada {
+    margin-top: 30px;
   }
   .portada .img {
     text-align: center;
@@ -237,6 +442,10 @@ a {
     text-align: center;
     text-decoration: none;
   }
+  .dibujoemilia {
+    width: 350px;
+    margin-left: 20px;
+  }
   main {
     background-color: rgb(252, 121, 182);
   }
@@ -246,12 +455,16 @@ a {
 }
 @media (max-width: 320px) {
   .portadaImagen {
-    width: 250px;
+    width: 286px;
+  }
+  .dibujoemilia {
+    width: 300px;
+    margin-left: 20px;
   }
 }
 @media (min-width: 701px) {
   .bodytour {
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(125, 225, 252);
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -292,7 +505,7 @@ a {
 }
 @media (max-width: 700px) {
   .bodytour {
-    background-color: rgb(0, 255, 255);
+    background-color: rgb(125, 225, 252);
     align-items: center;
   }
   button {
@@ -350,7 +563,7 @@ a {
 }
 
 .vermas {
-  background-color: aqua;
+  background-color: rgb(125, 225, 252);
   border: none;
   padding: 5px;
   font-size: 14px;
@@ -388,6 +601,7 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .foto4 img {
@@ -413,15 +627,10 @@ a {
   width: 100%;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .foto8 img {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.foto9 img {
   width: 100%;
   display: flex;
   align-items: center;
@@ -474,9 +683,9 @@ a {
     grid-auto-rows: minmax(200px, auto);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   body {
-    background-color: aqua;
+    background-color: rgb(125, 225, 252);
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -488,10 +697,9 @@ a {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
     text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
   }
   .newsletter-container h2 {
     margin-bottom: 20px;
@@ -515,16 +723,61 @@ a {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
     font-size: 16px;
   }
   .newsletter-container button:hover {
     background-color: #0056b3;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1439px) {
   body {
-    background-color: aqua;
+    background-color: rgb(125, 225, 252);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mainnews {
+    background-color: rgb(252, 121, 182);
+  }
+  .newsletter-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .newsletter-container h2 {
+    margin-bottom: 20px;
+  }
+  .newsletter-container label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+  }
+  .newsletter-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .newsletter-container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .newsletter-container button:hover {
+    background-color: #0056b3;
+  }
+}
+@media (max-width: 1023px) {
+  body {
+    background-color: rgb(125, 225, 252);
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -536,9 +789,50 @@ a {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 60px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    margin-left: 15%;
+  }
+  .newsletter-container h2 {
+    margin-bottom: 20px;
+  }
+  .newsletter-container label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+  }
+  .newsletter-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .newsletter-container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 42%;
+  }
+  .newsletter-container button:hover {
+    background-color: #0056b3;
+  }
+}
+@media (max-width: 766px) {
+  .newsletter-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
     margin-bottom: 80px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;
   }
   .newsletter-container h2 {
@@ -565,9 +859,7 @@ a {
     cursor: pointer;
     width: 100%;
     font-size: 16px;
-  }
-  .newsletter-container button:hover {
-    background-color: #0056b3;
+    padding-left: 10%;
   }
 }
 
